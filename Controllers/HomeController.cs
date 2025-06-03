@@ -10,6 +10,9 @@ namespace CRUD.Controllers
         private readonly ILogger<HomeController> _logger;
         public string[] listofData = { "one", "two", "three" };
 
+
+
+
         private readonly  CategoryContext _ct;
         
         public HomeController(ILogger<HomeController> logger, CategoryContext ct)
