@@ -24,13 +24,14 @@ namespace CRUD.Controllers
         
         public IActionResult Index()
         {
-            foreach(var c in _ct.Categories)
+            List<string> cats = new List<string>();
+            foreach (var c in _ct.Categories)
             {
-               // c.Name;
+               cats.Add(c.Name);
             }
 
             
-           // ViewBag.listofData = _ct.Categories[0].Name;
+            ViewBag.listofData = cats;
             return View();
         }
 
